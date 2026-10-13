@@ -1,5 +1,12 @@
 @font-face {
     font-family: "outfit";
+    src: url("../assets/fonts/outfit/static/Outfit-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "outfit";
     src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
@@ -26,7 +33,7 @@
     font-display: swap;
     font-style: normal;
 }
-
+* { outline: 1px solid red; }  
 :root{
     --White: hsl(0, 0%, 100%);
     --Stone100: hsl(30, 54%, 90%);
@@ -40,20 +47,81 @@
 
 body{
     font-size: 1rem;
+    background-color: var(--Stone100);
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.recipe-article {
+    background-color: var(--White);
 }
 
 .recipe-article h1, .recipe-article h2{
     font-family: "youngSerif", Arial, Helvetica, sans-serif;
 }
 
-.recipe-article p, .recipe-article li, .recipe-article caption, .recipe-article th{
+.recipe-article p, .recipe-article caption, .recipe-article th{
     font-family: "outfit", Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    color: var(--Stone600);
+    display: inline;
 }
 
 .recipe-article strong, .recipe-article td{
     font-family: "outfit", Arial, Helvetica, sans-serif;
     font-weight: 600;
+    color: var(--Stone600);
 }
 
+.recipe-article h1{
+    color: var(--Stone900);
+}
+.recipe-article h2{
+    color: var(--Brown800);
+}
 
+.recipe-preparation-sect{
+    background-color: var(--Rose50);
+}
+
+.recipe-article .recipe-preparation-sect h2{
+    color: var(--Rose800);
+    font-family: "outfit", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.recipe-preparation-sect li::marker{
+    color: var(--Rose800);
+    font-size: 0.8rem;
+   
+}
+
+.recipe-preparation-sect li strong {
+   margin-left: 1.5rem;
+}
+
+.recipe-ingredients-sect li::marker{
+    color: var(--Brown800);
+    font-size: 0.8rem;
+    padding-right: 100px;
+    display: block;
+}
+
+.recipe-ingredients-sect p{
+    display: block;
+    margin: 0 0 0 1.5rem;
+}
+
+.recipe-instructions-sect li::marker {
+    font-family: "outfit", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--Brown800);
+}
+
+.recipe-instructions-sect p{
+    display: block;
+    margin: 0 0 0 1rem;
+}
