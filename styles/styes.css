@@ -57,8 +57,8 @@ img{
 
 table {
   table-layout: fixed;
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0;
   border-collapse: collapse;
 }
 
@@ -74,10 +74,10 @@ table {
 
 .recipe-article p, .recipe-article caption, .recipe-article th{
     font-family: "outfit", Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--Stone600);
-    display: inline;
 }
+
 
 .recipe-article ol, .recipe-article ul{
     padding: 0px;
@@ -85,22 +85,29 @@ table {
 
 .recipe-article strong, .recipe-article td{
     font-family: "outfit", Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--Stone600);
 }
 
 .recipe-article h1{
     color: var(--Stone900);
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 2.2rem;
 }
 
 .recipe-article h2{
     color: var(--Brown800);
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .recipe-article header, .recipe-article section{
     margin: 0 2rem 0 2rem;
+}
+
+.recipe-header p{
+    width: 19.5rem;
 }
 
 .recipe-preparation-sect{
@@ -190,8 +197,30 @@ table {
     border-bottom: 1px solid var(--Stone150);
 }
 
+.recipe-nutrition-sect{
+    padding-bottom: 2rem;
+}
 
+.recipe-nutrition-sect caption{
+    text-align: left;
+    width: 95%;
+    margin-bottom: 1.2rem;
+}
+.recipe-nutrition-sect td, .recipe-nutrition-sect th{
+    padding: 0.8rem 0;
+}
 
+.recipe-nutrition-sect tbody tr:not(:last-child){
+    border-bottom: 1px solid var(--Stone150);
+}
 
+.recipe-nutrition-sect th{
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.recipe-nutrition-sect td{
+    color: var(--Brown800);
+}
 
 
